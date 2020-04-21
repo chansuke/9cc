@@ -1,1 +1,5 @@
-FROM gcc:8
+FROM ubuntu:19.10
+
+RUN apt-get update
+RUN apt-get install -y make gcc lld
+
