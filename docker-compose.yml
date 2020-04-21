@@ -1,0 +1,10 @@
+version: "3"
+services:
+  minicc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/minicc
+    working_dir: /minicc
+

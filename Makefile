@@ -1,11 +1,10 @@
-CFLAGS=-std=c11 -Wall -g -static
+chibicc: main.o
+	$(CC) -o $@ $? $(LDFLAGS)
 
-9cc: 9cc.c
-
-test: 9cc
-				./test.sh
+test: minicc
+	./test.sh
 
 clean:
-				rm -f 9cc *.o *~ tmp*
+	rm -f minicc *.o *~ tmp*
 
 .PHONY: test clean
