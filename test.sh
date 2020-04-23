@@ -16,9 +16,8 @@ try() {
   fi
 }
 
-try 0 0
-try 42 42
-try 21 '5+20-4'
-try 41 ' 12 + 34 - 5 '
+assert 0 0
+assert 42 42
+assert 21 "5+20-4"
 
 echo OK
