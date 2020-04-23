@@ -1,4 +1,6 @@
-chibicc: main.o
+CFLAGS=-std=c11 -g -static
+
+minicc: main.o
 	$(CC) -o $@ $? $(LDFLAGS)
 
 test: minicc
