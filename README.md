@@ -6,3 +6,6 @@ Rui Ueyamaさんの [低レイヤを知りたい人のためのCコンパイラ�
 # Usage
 `docker-compose run minicc`
 
+Run the tests with:
+
+`make test`
